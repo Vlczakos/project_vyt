@@ -1,3 +1,5 @@
+.direnv
+
 test-results
 node_modules
 
