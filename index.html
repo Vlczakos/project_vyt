@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <title>Můj web</title>
+  <meta charset="UTF-8"/>
+  <title>David Vlček</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="files/tux.png">
   <script src="script.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="flex flex-col min-h-screen">
   <header class="bg-white shadow-md ">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-      <h1 class="text-4xl font-extrabold">Můj web</h1>
-      <nav class="space-x-4 text-2xl text-blue-600 font-semibold">
+    <div class="max-w-7xl mx-auto px-8 py-3 flex justify-between items-center">
+      <h1 class="[font-size:clamp(0rem,6vw,3rem)] font-extrabold">Můj web</h1>
+      <nav class="space-x-4 text-blue-600 font-semibold [font-size:calc(clamp(0rem,2.5vw,1rem))]">
         <button onclick="loadPage('./subpages/home.html')" class="hover:underline">Domů</button>
         <button onclick="loadPage('./subpages/poster.html')" class="hover:underline">Leták</button>
         <button onclick="loadPage('./subpages/contact.html')" class="hover:underline">Kontakt</button>
