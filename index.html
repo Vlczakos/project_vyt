@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Můj web</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen">
+  <header class="bg-white shadow-md ">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-4xl font-extrabold">Můj web</h1>
+      <nav class="space-x-4 text-2xl text-blue-600 font-semibold">
+        <button onclick="loadPage('./subpages/home.html')" class="hover:underline">Domů</button>
+        <button onclick="loadPage('./subpages/poster.html')" class="hover:underline">Leták</button>
+        <button onclick="loadPage('./subpages/contact.html')" class="hover:underline">Kontakt</button>
+        <a href="http://vlcak.com:8080/" class="hover:underline">Minecraft</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="content" class="p-6 rounded flex-grow items-center flex flex-col">Loading...</div>
+
+  <footer class="bg-white border-t mt-8">
+    <div class="max-w-4xl mx-auto px-4 py-4 text-center text-sm text-gray-500">
+      © 2025 David Vlček | 2L
+    </div>
+  </footer>
+</body>
+</html>
